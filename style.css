@@ -1,13 +1,14 @@
-body { 
-    font-family: Arial, sans-serif; 
-    text-align: center; /* Center align text and elements */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* Center align text and elements */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    background-image: url('film.jpg'); /* Replace with your image filename */
+    background-image: url('film.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,10 +19,13 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers everything inside the container */
+    align-items: center;
+    /* Centers everything inside the container */
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -29,58 +33,69 @@ body {
     color: #1d1212;
 }
 
-.movie { 
-    display: flex; 
-    justify-content: space-between; 
-    width: 300px; 
+.movie {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 
-.sort-btn, button, input {
-    text-align: center; 
+.sort-btn,
+button,
+input {
+    text-align: center;
     display: block;
-    width: 80%; /* Ensures they take up the most of the width of the container */
-    max-width: 300px; /* Prevents items from being too wide */
+    width: 80%;
+    /* Ensures items take up the most of the width of the container */
+    max-width: 300px;
+    /* Prevents items from being too wide */
 }
 
-form { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #movie-list {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensures movie items are centered */
-    gap: 10px; /* Adds spacing between movie items */
+    align-items: center;
+    /* Ensures movie items are centered */
+    gap: 10px;
+    /* Adds spacing between movie items */
 }
 
-.movie { 
-    display: flex; 
-    justify-content: space-between; 
+.movie {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 300px; 
-    background: rgba(255, 255, 255, 0.3); /* Light background for contrast */
+    width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    /* Light background for contrast */
     padding: 10px;
     border-radius: 5px;
 }
 
 .movie span {
-    flex: 1; /* Ensures the text takes up remaining space */
+    flex: 1;
+    /* Ensures the text takes up remaining space */
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .remove-btn {
-    flex-shrink: 0; /* Prevents button from stretching */
+    flex-shrink: 0;
+    /* Prevents button from stretching */
     padding: 5px 10px;
     background-color: #814f4e;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 80px; /* Consistent button width */
+    width: 80px;
+    /* Consistent button width */
     text-align: center;
 }
